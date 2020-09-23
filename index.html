@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"/>
 
     <!-- font-family: 'Open Sans', sans-serif;  -->
   </head>
@@ -20,32 +21,40 @@
   <!-- defer이 사용되는 이유 : html 파일이 파싱되는동안 자바스크립트 파일을 동시에 다운받아서
     html이 파싱이 다 완료된 다음에 자바스크립트를 실행함
 -->
+<body>
+
   <!-- navbar -->
   <nav id="navbar">
-    <div class="navbar__logo">
+    <!-- <div class="navbar__logo">
       <img src="./images/logoImage.png" alt="error" />
       <span class="navbar__name">JMY</span>
-    </div>
+    </div> -->
     <div class="navbar__menu">
-      <div class="navbar__button"></div>
-      <div class="navbar__button"></div>
-      <div class="navbar__button"></div>
-      <ul class="navbar__items">
-        <li class="navbar__item">HOME</li>
-        <li class="navbar__item">INTRODUCE</li>
-        <li class="navbar__item">WORKS</li>
-        <li class="navbar__item">CONTACT</li>
-      </ul>
+            <ul class="navbar__items">
+                <li class="navbar__item">HOME</li>
+                <li class="navbar__item">INTRODUCE</li>
+                <li class="navbar__item">WORKS</li>
+                <li class="navbar__item">CONTACT</li>
+            </ul>
     </div>
   </nav>
+  <!-- main -->
+  <section id="main">
+      <img src="./images/green.png" alt="">
+      <div class="main__description">
+        <h1>This is Lucia's HomePage</h1>
+            <h2>by JUNG/MIYOUNG</h2>  
+            <p>Believe in yourself! Have faith in your abilities!</br> Without a humble but reasonable confidence in your own powers you cannot be successful or happy</p>
+      </div>
+</section>
   <!-- home -->
   <section id="home">
-    <div class="home__picture">
+    <div class="home__profile">
       <img src="./images/profile.jpg" alt="" />
     </div>
     <div class="home__description">
         <span> Hi, I'm always doing much better than before. </br>
-         I’m confident that I will become the best programmer of front-end in the future someday.
+         I’m confident that I will become the best programmer of front-end field in the future someday.
         </span>
     </div>
   </section>
@@ -80,8 +89,8 @@
   </section>
   <!-- contact -->
   <section id="contact">
-    
+
 
   </section>
-  <body></body>
+  </body>
 </html>

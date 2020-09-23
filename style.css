@@ -6,9 +6,14 @@
   --color-purple: #c4b9fe;
   --color-light-purple: #e3b5ff;
   --color-pink: #fededf;
+  --color-light-pink:#e8cbc6;
+  --color-orange:#f3b25c;
+  --color-green:#97c12f;
+  --color-dark-green:#8fa282;
   --color-black: #333;
   --color-gray: #616161;
   --color-light-gray: #7c7979;
+  --color-chocolate:#422e28;
 
  /* font-size */
  --font-large: 48px;
@@ -24,8 +29,14 @@
 
 }
 
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
  }
 
 button {
@@ -37,9 +48,123 @@ button {
 
 ul {
     padding:0;
+    list-style: none;
+    
 }
 
 h1, h2, h3 {
  margin: 8px 0;
+}
+
+h1 {
+    font-size: var(--font-large);
+}
+
+h2 {
+    font-size: var(--font-medium);
+}
+
+/* navbar */
+#navbar {
+    position: fixed;
+    z-index:999;
+    color: var(--color-black);
+}
+
+.navbar__items {
+    display:flex;
+    padding: 10px;
+}
+
+.navbar__items li {
+    padding: 0 12px;
+    cursor: pointer;
+    border:1px solid transparent;
+    transition: all 200ms ease-in;
+    
+}
+
+.navbar__items li:hover {
+    border-radius: 4px;
+    font-weight: var(--weight-bold);
+    /* opacity: 1; */
+    
+}
+
+/* main */
+#main {
+    width:100%;
+    height:100vh;
+    position: relative;
+    z-index:1;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#main::after {
+    width:100%;
+    height:100vh;
+    content:"";
+    background: center/cover no-repeat url(./images/profile-2.jpg);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    opacity: 0.7;
+}
+
+#main img {
+    position: absolute;
+    width: 170px;
+    top:10px;
+    right:10px;
+}
+
+.main__description {
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid red; */
+    width: 100%;
+    height: 100%;
+    padding: 16%;
+    position: absolute;
+    color:var(--color-white);
+    font-family: 'Playfair Display', serif;
+}
+
+.main__description h2 {
+    color: var(--color-orange);
+}
+
+.main__description p {
+    font-size: var(--font-regular);
+    color:var(--color-chocolate);
+}
+
+
+
+
+/* home */
+#home {
+    display:flex;
+    align-items: center;
+    padding:16px 0;
+    /* border:1px solid black; */
+    background-color: var(--color-light-pink);
+}
+
+.home__profile {
+    width: 50%;
+    padding: 32px;
+
+}
+
+.home__profile img {
+    max-width: 100%;
+}
+
+.home__description {
+    font-size: var(--font-medium);
+    color:var(--color-light-white);
 }
 
