@@ -1,0 +1,45 @@
+:root {
+  /* Color */
+  --color-white: #fff;
+  --color-light-white: #fcf6f2;
+  --color-dark-white: #ccc;
+  --color-purple: #c4b9fe;
+  --color-light-purple: #e3b5ff;
+  --color-pink: #fededf;
+  --color-black: #333;
+  --color-gray: #616161;
+  --color-light-gray: #7c7979;
+
+ /* font-size */
+ --font-large: 48px;
+ --font-medium: 28px;
+ --font-regular: 18px;
+ --font-small: 16px
+ --font-micro: 14px;
+
+ /* font-weight */
+ --weight-bold:700;
+ --weight-semi-bold:600;
+ --weight-regular: 400;
+
+}
+
+* {
+    box-sizing: border-box;
+ }
+
+button {
+    outline: none;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul {
+    padding:0;
+}
+
+h1, h2, h3 {
+ margin: 8px 0;
+}
+
