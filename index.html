@@ -15,5 +15,36 @@
 
     <!-- font-family: 'Open Sans', sans-serif;  -->
   </head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <!-- defer이 사용되는 이유 : html 파일이 파싱되는동안 자바스크립트 파일을 동시에 다운받아서
+    html이 파싱이 다 완료된 다음에 자바스크립트를 실행함
+-->
+  <!-- navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <img src="./images/logoImage.png" alt="error" />
+      <span class="navbar__name">JMY</span>
+    </div>
+    <div class="navbar__menu">
+      <div class="navbar__button"></div>
+      <div class="navbar__button"></div>
+      <div class="navbar__button"></div>
+      <ul class="navbar__items">
+        <li class="navbar__item">HOME</li>
+        <li class="navbar__item">INTRODUCE</li>
+        <li class="navbar__item">WORKS</li>
+        <li class="navbar__item">CONTACT</li>
+      </ul>
+    </div>
+  </nav>
+  <!-- home -->
+  <section id="home"></section>
+  <!-- About myself -->
+  <section id="introduce"></section>
+  <!-- my works -->
+  <section id="works"></section>
+  <!-- contact -->
+  <section id="contact"></section>
   <body></body>
 </html>
