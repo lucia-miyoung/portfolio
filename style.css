@@ -12,7 +12,7 @@
   --color-dark-green:#8fa282;
   --color-black: #333;
   --color-gray: #616161;
-  --color-light-gray: #7c7979;
+  --color-light-gray: #cbc7c8;
   --color-chocolate:#422e28;
 
  /* font-size */
@@ -94,16 +94,15 @@ h2 {
 /* main */
 #main {
     width:100%;
-    height:100vh;
+    height:100%;
     position: relative;
     z-index:1;
     align-items: center;
-    /* justify-content: center; */
 }
 
 #main::after {
     width:100%;
-    height:100vh;
+    height:100%;
     content:"";
     background: center/cover no-repeat url(./images/profile-2.jpg);
     position: absolute;
@@ -113,32 +112,38 @@ h2 {
     opacity: 0.7;
 }
 
-#main img {
+.main__logo {
     position: absolute;
     width: 170px;
     top:10px;
     right:10px;
 }
 
+.main__logo >img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .main__description {
     display: flex;
     flex-direction: column;
     /* border:1px solid red; */
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     padding: 16%;
-    position: absolute;
     color:var(--color-white);
-    font-family: 'Playfair Display', serif;
+    
 }
 
 .main__description h2 {
     color: var(--color-orange);
+    /* text-shadow: 2px 2px 2px gray; */
 }
 
 .main__description p {
     font-size: var(--font-regular);
     color:var(--color-chocolate);
+    text-shadow: 1px 1px 1px gray;
 }
 
 
@@ -146,21 +151,42 @@ h2 {
 
 /* home */
 #home {
-    display:flex;
-    align-items: center;
     padding:16px 0;
     /* border:1px solid black; */
     background-color: var(--color-light-pink);
 }
 
+.home__wrapper {
+    display:flex;
+    align-items: center;
+    width: 70%;
+    margin:auto;
+}
+
+
+
 .home__profile {
-    width: 50%;
-    padding: 32px;
+    width: 70%;
+    padding: 25px;
+    
+
+}
+
+.home__profile::before {
+    content:'';
+    width: 110px;
+    height: 70px;
+    background-color: var(--color-orange);
+    position: absolute;
+    transform:translate(-40px, -30px);
 
 }
 
 .home__profile img {
     max-width: 100%;
+    -webkit-box-shadow: 10px 11px 0px 0px rgba(190,147,113,1);
+    -moz-box-shadow: 10px 11px 0px 0px rgba(190,147,113,1);
+    box-shadow: 10px 11px 0px 0px rgba(190,147,113,1);
 }
 
 .home__description {
