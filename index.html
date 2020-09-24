@@ -12,9 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet"/>
-
-    <!-- font-family: 'Open Sans', sans-serif;  -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif;  
+      font-family: 'Playfair Display', serif;
+    -->
   </head>
   <link rel="stylesheet" href="style.css" />
   <script src="main.js" defer></script>
@@ -29,10 +30,11 @@
       <img src="./images/logoImage.png" alt="error" />
       <span class="navbar__name">JMY</span>
     </div> -->
+
     <div class="navbar__menu">
             <ul class="navbar__items">
                 <li class="navbar__item">HOME</li>
-                <li class="navbar__item">INTRODUCE</li>
+                <li class="navbar__item">ABOUT</li>
                 <li class="navbar__item">WORKS</li>
                 <li class="navbar__item">CONTACT</li>
             </ul>
@@ -45,57 +47,125 @@
 
       </div>
       <div class="main__description">
-        <h1>This is Lucia's HomePage</h1>
+        <h1 style="color:white">This is Lucia's HomePage</h1>
             <h2>by JUNG/MIYOUNG</h2>  
             <p>Believe in yourself! Have faith in your abilities!</br> Without a humble but reasonable confidence in your own powers you cannot be successful or happy</p>
       </div>
 </section>
-  <!-- home -->
-  <section id="home">
-    <div class="home__wrapper">
-        <div class="home__profile">
+  <!-- About myself -->
+  <section id="about">
+    <div class="about__wrapper">
+        <div class="about__profile">
             <img src="./images/profile.jpg" alt="" />
         </div>
-        <div class="home__description">
-            <span> Hi, I'm always doing much better than before. </br>
-            I’m confident that I will become the best programmer of front-end field in the future someday.
-            </span>
+        
+        <div class="about__description">
+          <h1 class="about__title">About Me</h1>
+            <span class="about__detail"> 
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur consequuntur rerum sit non error quibusdam ea dicta amet, assumenda, consectetur fugit modi sapiente soluta mollitia esse nobis. Officiis, minima laudantium.
+              
+                </span>
         </div>
     </div>
   </section>
-  <!-- About myself -->
-  <section id="introduce">
-    <h2 class="introduce__title title">Introduce myself</h2>
-    <div class="introduce__detail">1</div>
-    <div class="introduce__detail">2</div>
+  
+  <!-- skills -->
+  <section id="skills">
+    <h1>Skills</h1>
+    <div class="skills__items">
+      <ul>
+        <li class="skills__item">
+          <div class="item">
+            <span class="item__img"><i class="fab fa-html5"></i></span>
+            <p>HTML</p>
+          </div>
+        </li>
+        <li class="skills__item">
+          <div class="item">
+            <span class="item__img"> <i class="fab fa-css3"></i></span>
+           <p>CSS</p>
+          </div>
+       </li>
+       <li class="skills__item">
+          <div class="item">
+            <span class="item__img"> <i class="fab fa-js"></i></span>
+              <p>JAVASCRIPT</p>
+          </div>
+      </li>
+      <li class="skills__item">
+        <div class="item">
+          <span class="item__img"><i class="fab fa-react"></i></span>
+          <p>REACT</p>
+        </div>
+      </li>
+      <li class="skills__item">
+         <div class="item">
+          <span class="item__img"> <i class="fab fa-node"></i></span>
+            <p>NODE.JS</p>
+      </div>
+      </li> 
+      </ul>
+    </div>
   </section>
+
   <!-- my works -->
   <section id="works">
-    <h2 class="works__title title">Works</h2>
-    <div class="works__slides">
-        <ul>
-            <li class="works__slide">
-                <a href="#"><img src="./images/thumbnail-1.jpg"/></a>
-            </li>
-            <li class="works__slide">
-                <a href="#"><img src="./images/thumbnail-2.png"/></a>
-            </li>
-            <li class="works__slide">
-                <a href="#"><img src="./images/thumbnail-3.jpg"/></a>
-            </li>
-            <li class="works__slide">
-                <a href="#"><img src="./images/thumbnail-2.png"/></a>
-            </li>
-            <li class="works__slide">
-                <a href="#"><img src="./images/thumbnail-1.jpg"/></a>
-            </li>
-        </ul>
-    </div>
+    <h1 class="works__title title">Works</h1>
+        <div class="works__projects">
+                <a href="#" class="works__project">
+                  <img src="./images/thumbnail-1.jpg"/>
+                  <div class="works__description">
+                    <span>hello~~!</span>
+                    <p>detail</p>
+                  </div>
+                </a>
+                <a href="#" class="works__project">
+                  <img src="./images/thumbnail-2.png"/>
+                    <div class="works__description">
+                     <span>hello~~!</span>
+                     <p>detail</p>
+                    </div>
+                </a>
+                <a href="#" class="works__project">
+                    <img src="./images/thumbnail-3.jpg"/>
+                      <div class="works__description">
+                        <span>hello~~!</span>
+                        <p>detail</p>
+                      </div>
+                </a>
+                <a href="#" class="works__project">
+                    <img src="./images/thumbnail-2.png"/>
+                      <div class="works__description">
+                        <span>hello~~!</span>
+                        <p>detail</p>
+                      </div>
+                </a>
+                <a href="#" class="works__project">
+                    <img src="./images/thumbnail-1.jpg"/>
+                      <div class="works__description">
+                        <span>hello~~!</span>
+                        <p>detail</p>
+                      </div>
+                </a>
+                <a href="#" class="works__project">
+                  <img src="./images/thumbnail-3.jpg"/>
+                    <div class="works__description">
+                      <span>hello~~!</span>
+                      <p>detail</p>
+                    </div>
+              </a>
+        </div>
+    <!-- <div class="works__footer"></div> -->
   </section>
   <!-- contact -->
   <section id="contact">
+    <h1>Contact</h1>
+    <div class="contact_title">For more MIYOUNG, why don't you contact here.</div>
+    <div class="contact__detail">
+      <span class="contact__email"> myjung93a@gmail.com </span>
+      <span class="contact__phone"> 010-3956-8377 </span>
 
-
+    </div>
   </section>
   </body>
 </html>
